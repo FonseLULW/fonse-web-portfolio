@@ -4,7 +4,7 @@ import avatar from '../assets/avatar.jpg'
 export default function LandingPanel() {
     let [titleHeight, descHeight, imgHeight, btnHeight] = ['20%', '15%', '40%', '25%'];
     return (
-        <Container bg='#93BFCF' maxW='none' padding='0.5em'>
+        <Container maxW='none' padding='0.5em'>
             <VStack h='100%' spacing='0px'>
                 <Flex height={titleHeight} direction='column' justifyContent='flex-end'>
                     <Text fontSize='4xl' align='center'>Jose Alfonso Clarito</Text>
