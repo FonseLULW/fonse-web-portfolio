@@ -1,5 +1,6 @@
 import { Container, Flex, Text, Image, FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Divider, Button, VStack, Link, Box } from '@chakra-ui/react'
 import jslogo from '../assets/js-test.png'
+import MsgForm from './msgform'
 
 export default function ContactMePanel() {
     return (
@@ -17,12 +18,7 @@ export default function ContactMePanel() {
             </VStack>
             <Divider />
             <Text fontSize='md'>or send me a message directly...</Text>
-            <FormControl>
-                <Input type="text" placeholder='Name'/>
-                <Input type="email" placeholder='Email'/>
-                <Textarea placeholder="Message"></Textarea>
-                <Button type="submit">Send</Button>
-            </FormControl>
+            <MsgForm />
         </Container>
     )
 }
