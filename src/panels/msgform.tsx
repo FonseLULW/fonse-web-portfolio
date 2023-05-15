@@ -8,11 +8,7 @@ export default function MsgForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [err, setErr] = useState('ServiceError');
-
-    useEffect(() => {
-        console.log(`'The error is ${err}'`);
-    }, [err])
+    const [err, setErr] = useState('');
     
     const validate = (nameInput: string, emailInput: string, msgInput: string) => {
         if (!nameInput) { return 'InvalidName' }
@@ -21,23 +17,23 @@ export default function MsgForm() {
         return ''
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
         const err = validate(name.trim(), email.trim(), message.trim());
         if (!err) {
-            setErr('hi')
             var mail = {
                 from_name: name,
                 from_email: email,
                 message: message
             }
 
-            emailjs.send('service_b2o1ust', 'template_9azdhnp', mail, 'iqsvLPGvnlVF9X5ael')
-            .then((res) => {
-                alert('msg sent')
-            })
-            .catch((error) => {
+            try {
+                await emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, mail, import.meta.env.VITE_PUBLIC_USER_ID)
+                alert('msg sent');
+                setErr('');
+            } catch (e) {
                 setErr('ServiceError');
-            })
+            }
+
 
             return;
         }
