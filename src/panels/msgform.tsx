@@ -44,39 +44,27 @@ export default function MsgForm() {
         <>
             <FormControl isInvalid={err === 'InvalidName'}>
                 <Input type="text" placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
-                {
-                    err === 'InvalidName' &&
-                    <FormErrorMessage>
-                        A name is required (Use 'anonymous' if you don't want to provide a name)
-                    </FormErrorMessage>
-                }
+                <FormErrorMessage>
+                    A name is required
+                </FormErrorMessage>
             </FormControl>
             <FormControl isInvalid={err === 'InvalidEmail'}>
                 <Input type="email" placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
-                {
-                    err === 'InvalidEmail' &&
-                    <FormErrorMessage>
-                        A valid email is required
-                    </FormErrorMessage>
-                }
+                <FormErrorMessage>
+                    A valid email is required
+                </FormErrorMessage>
             </FormControl>
             <FormControl isInvalid={err === 'InvalidMessage'}>
                 <Textarea placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
-                {
-                    err === 'InvalidMessage' &&
-                    <FormErrorMessage>
-                        A message is required
-                    </FormErrorMessage>
-                }
+                <FormErrorMessage>
+                    A message is required
+                </FormErrorMessage>
             </FormControl>
             <FormControl isInvalid={err === 'ServiceError'}>
                 <VisuallyHiddenInput />
-                {
-                    err === 'ServiceError' &&
-                    <FormErrorMessage>
-                        Failed to send email
-                    </FormErrorMessage>
-                }
+                <FormErrorMessage>
+                    Failed to send email
+                </FormErrorMessage>
             </FormControl>
             <Button type="submit" onClick={handleSubmit}>Send</Button>
             
