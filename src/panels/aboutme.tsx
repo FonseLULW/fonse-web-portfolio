@@ -1,5 +1,6 @@
 import { Container, Button, Text, SimpleGrid, Image, Box, Grid, GridItem } from '@chakra-ui/react'
 import jslogo from '../assets/js-test.png'
+import { SkillsConfig } from './data/skills_config'
 
 export default function AboutMePanel() {
     return (
@@ -18,9 +19,8 @@ export default function AboutMePanel() {
             <GridItem area='skills'>
                 <Text fontSize='2xl'>Skills</Text>
                 <SimpleGrid minChildWidth='100px' spacing={5}>
-                    {/* <Box><Image src={jslogo} alt='JavaScript'/></Box> */}
                     {
-                        [...Array(75).keys()].map(n => <Box><Image src={jslogo} alt='JavaScript' key={n}/></Box>)
+                        SkillsConfig.map(item => <Box><Image src={`/skills/${item.imagepath}`} alt={item.skill} key={item.skill}/></Box>)
                     }
                 </SimpleGrid>
             </GridItem>
