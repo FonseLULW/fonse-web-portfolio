@@ -7,3 +7,9 @@
 #root > * {
   height: 100vh;
 }
+
+#projectspanel {
+  height: unset;
+  min-height: 100vh;
+  max-height: fit-content;
+}

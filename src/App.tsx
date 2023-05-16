@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       {/* <LandingPanel /> */}
-      <AboutMePanel />
-      {/* <ProjectsPanel /> */}
+      {/* <AboutMePanel /> */}
+      <ProjectsPanel/>
       {/* <ContactMePanel /> */}
     </>
   )

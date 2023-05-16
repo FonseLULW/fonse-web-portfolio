@@ -20,7 +20,7 @@ export default function AboutMePanel() {
                 <Text fontSize='2xl'>Skills</Text>
                 <SimpleGrid minChildWidth='100px' spacing={5}>
                     {
-                        SkillsConfig.map(item => <Box><Image src={`/skills/${item.imagepath}`} alt={item.skill} key={item.skill}/></Box>)
+                        SkillsConfig.map(item => <Box key={item.skill}><Image src={`/skills/${item.imagepath}`} alt={item.skill}/></Box>)
                     }
                 </SimpleGrid>
             </GridItem>

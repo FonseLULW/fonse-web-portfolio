@@ -3,7 +3,7 @@ import Projects from './myprojects'
 
 export default function ProjectsPanel() {
     return (
-        <Container maxW='none'>
+        <Container maxW='none' id="projectspanel">
             <Text fontSize='2xl'>Projects</Text>
             <Text fontSize='l'>Lorem ipsum</Text>
             <Tabs>
