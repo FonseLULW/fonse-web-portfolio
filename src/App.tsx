@@ -11,10 +11,10 @@ import ContactMePanel from './panels/contactme'
 function App() {
   return (
     <>
-      {/* <LandingPanel /> */}
-      {/* <AboutMePanel /> */}
+      <LandingPanel />
+      <AboutMePanel />
       <ProjectsPanel/>
-      {/* <ContactMePanel /> */}
+      <ContactMePanel />
     </>
   )
 }

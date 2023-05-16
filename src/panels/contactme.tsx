@@ -1,24 +1,32 @@
-import { Container, Flex, Text, Image, FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Divider, Button, VStack, Link, Box } from '@chakra-ui/react'
-import jslogo from '../assets/js-test.png'
+import { Flex, Text, Image, Grid, Divider, VStack, Link, Box, GridItem } from '@chakra-ui/react'
 import MsgForm from './msgform'
+import { ContactConfig } from './data/contact_config'
 
 export default function ContactMePanel() {
     return (
-        <Container maxW='none'>
-            <Text fontSize='2xl'>Contact Me</Text>
-            <VStack>
-                <Flex>{/* Decompose into smaller component */}
-                    <Box><Image boxSize={50} src={jslogo} alt='JavaScript'/></Box>
-                    <Link>jalfonsclarito@gmail.com</Link>
-                </Flex>
-                <Flex>{/* Decompose into smaller component */}
-                    <Box><Image boxSize={50} src={jslogo} alt='JavaScript' /></Box>
-                    <Link>jalfonsclarito@gmail.com</Link>
-                </Flex>
-            </VStack>
-            <Divider />
-            <Text fontSize='md'>or send me a message directly...</Text>
-            <MsgForm />
-        </Container>
+        <Grid maxW='none'>
+            <GridItem>
+                <Text fontSize='2xl'>Contact Me</Text>
+            </GridItem>
+            <GridItem>
+                <VStack>
+                    {
+                        ContactConfig.map(contact => 
+                            <Flex key={contact.display + '_' + contact.strategy}>
+                                <Box><Image boxSize={50} src={`contacts/${contact.imagepath}`} alt={contact.strategy} /></Box>
+                                <Link href={contact.ref}>{contact.display}</Link>
+                            </Flex>    
+                        )
+                    }
+                </VStack>
+            </GridItem>
+            <GridItem>
+                <Divider />
+                <Text fontSize='md'>or send me a message directly...</Text>
+            </GridItem>
+            <GridItem>
+                <MsgForm />
+            </GridItem>
+        </Grid>
     )
 }
