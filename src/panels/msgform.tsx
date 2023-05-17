@@ -31,6 +31,7 @@ export default function MsgForm() {
                 alert('msg sent');
                 setErr('');
             } catch (e) {
+                console.log("Service Error:", e)
                 setErr('ServiceError');
             }
 
