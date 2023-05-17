@@ -31,6 +31,7 @@ export default function MsgForm() {
                 alert('msg sent');
                 setErr('');
             } catch (e) {
+                console.log("Env:", import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, mail, import.meta.env.VITE_PUBLIC_USER_ID)
                 console.log("Service Error:", e)
                 setErr('ServiceError');
             }
