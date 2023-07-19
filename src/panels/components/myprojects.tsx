@@ -1,5 +1,5 @@
 import { Text, Image, Card, CardBody, Box, Grid, SimpleGrid  } from '@chakra-ui/react'
-import { ProjectConfig } from './data/project_config'
+import { ProjectConfig } from '../data/project_config'
 
 export default function Projects() {
     return (

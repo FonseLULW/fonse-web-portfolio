@@ -1,5 +1,5 @@
 import { Flex, Text, Image, Grid, Divider, VStack, Link, Box, GridItem } from '@chakra-ui/react'
-import MsgForm from './msgform'
+import MsgForm from './components/msgform'
 import { ContactConfig } from './data/contact_config'
 
 export default function ContactMePanel() {

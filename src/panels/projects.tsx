@@ -1,5 +1,5 @@
 import { Container, Text, Tabs, TabList, TabPanels, Tab, TabPanel, Image, Card, CardHeader, CardBody, CardFooter, VStack, Box  } from '@chakra-ui/react'
-import Projects from './myprojects'
+import Projects from './components/myprojects'
 
 export default function ProjectsPanel() {
     return (

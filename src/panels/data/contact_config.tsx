@@ -5,21 +5,21 @@ export var ContactConfig: {
     imagepath: string;
 }[] = [
     {
+        strategy: "Email",
+        display: "jalfonsclarito@gmail.com",
+        ref: "mailto:jalfonsclarito@gmail.com",
+        imagepath: "gmail.svg"
+    },
+    {
         strategy: "LinkedIn",
-        display: "Linked In",
+        display: "jaclarito",
         ref: "https://www.linkedin.com/in/jaclarito/",
         imagepath: "linkedin.png"
     },
     {
         strategy: "GitHub",
-        display: "git",
-        ref: "linked.in/jaclarito/",
-        imagepath: "linkedin.png"
-    },
-    {
-        strategy: "GitHub",
-        display: "My GH",
-        ref: "linked.in/jaclarito/",
-        imagepath: "linkedin.png"
+        display: "FonseLULW",
+        ref: "https://github.com/FonseLULW",
+        imagepath: "github-mark.svg"
     }
 ]

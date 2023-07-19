@@ -1,5 +1,7 @@
 import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Button, VisuallyHiddenInput } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
+import { Icon } from '@chakra-ui/react'
+import { AiOutlineSend } from "react-icons/ai";
 import emailjs from '@emailjs/browser';
 
 const VALID_EMAIL = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
@@ -68,7 +70,7 @@ export default function MsgForm() {
                     Failed to send email
                 </FormErrorMessage>
             </FormControl>
-            <Button type="submit" onClick={handleSubmit}>Send</Button>
+            <Button type="submit" onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
             
         </>
     )
