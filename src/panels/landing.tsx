@@ -3,12 +3,21 @@ import avatar from '../assets/avatar.jpg'
 
 export default function LandingPanel() {
     return (
-        <Grid maxW='none' padding='0.5em' templateAreas={`
-            "avatar name"
-            "avatar role"
-            "avatar summary"
-            "avatar action"
-        `}>
+        <Grid maxW='none' padding='0.5em' bg={['initial', null, 'grey']} templateAreas={[
+            `
+                "name"
+                "role"
+                "summary"
+                "avatar"
+                "action"
+            `, null,
+            `
+                "avatar name"
+                "avatar role"
+                "avatar summary"
+                "avatar action"
+            `
+        ]}>
             <GridItem area='name'>
                 <Text fontSize='4xl' align='center'>Jose Alfonso Clarito</Text>
             </GridItem>
@@ -18,7 +27,7 @@ export default function LandingPanel() {
             <GridItem area='summary'>
                 <Text align='center' fontSize='xl'>Lorem ipsum dolor sit amet consectetur.</Text>
             </GridItem>
-            <GridItem rowSpan={4} area='avatar'>
+            <GridItem area='avatar'>
                 <Center h='100%' w='100%'>
                     <Box boxSize='2xs'>
                         <Image
