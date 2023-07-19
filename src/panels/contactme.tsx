@@ -4,11 +4,22 @@ import { ContactConfig } from './data/contact_config'
 
 export default function ContactMePanel() {
     return (
-        <Grid maxW='none'>
-            <GridItem>
+        <Grid maxW='none' templateAreas={[`
+            "title"
+            "contacts"
+            "divider"
+            "form"
+            "footer"
+        `, null, `
+            "title title"
+            "contacts divider"
+            "contacts form"
+            "footer footer"
+        `]}>
+            <GridItem area="title">
                 <Text fontSize='2xl'>Contact Me</Text>
             </GridItem>
-            <GridItem>
+            <GridItem area={"contacts"}>
                 <VStack>
                     {
                         ContactConfig.map(contact => 
@@ -20,12 +31,15 @@ export default function ContactMePanel() {
                     }
                 </VStack>
             </GridItem>
-            <GridItem>
+            <GridItem area={"divider"}>
                 <Divider />
                 <Text fontSize='md'>or send me a message directly...</Text>
             </GridItem>
-            <GridItem>
+            <GridItem area={"form"}>
                 <MsgForm />
+            </GridItem>
+            <GridItem area={"footer"}>
+                <Text>© All rights reserved</Text>
             </GridItem>
         </Grid>
     )

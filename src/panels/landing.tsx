@@ -12,10 +12,10 @@ export default function LandingPanel() {
                 "action"
             `, null,
             `
-                "avatar name"
-                "avatar role"
-                "avatar summary"
-                "avatar action"
+                "name avatar"
+                "role avatar"
+                "summary avatar"
+                "action avatar"
             `
         ]}>
             <GridItem area='name'>
