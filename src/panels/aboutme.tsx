@@ -5,7 +5,7 @@ import { SkillsConfig } from './data/skills_config'
 
 export default function AboutMePanel() {
     return (
-        <Grid maxW='none' templateRows={'20% 10% 70%'} templateColumns='100%' templateAreas={`
+        <Grid bg="blue" minH={"100vh"} maxW='none' padding='0.5em' templateRows={'20% 10% 70%'} templateColumns='100%' templateAreas={`
             "about"
             "resume"
             "skills"

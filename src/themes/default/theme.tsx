@@ -6,10 +6,8 @@ export default extendTheme({
         Button,
     },
     colors: {
-        brand: {
-            100: "#b0ebc9",
-            // ...
-            900: "#1a202c",
-        },
+        primary: "#6096B4",
+        primary_variant: "#93BFCF",
+        secondary: "#EEE9DA",
     },
 });

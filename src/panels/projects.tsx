@@ -3,7 +3,7 @@ import Projects from './components/myprojects'
 
 export default function ProjectsPanel() {
     return (
-        <Container maxW='none' id="projectspanel">
+        <Container minH={"100vh"} maxW='none' padding='0.5em' id="projectspanel" bg={'red'}>
             <Text fontSize='2xl'>Projects</Text>
             <Text fontSize='l'>Lorem ipsum</Text>
             <Tabs>

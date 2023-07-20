@@ -4,7 +4,7 @@ import { ContactConfig } from './data/contact_config'
 
 export default function ContactMePanel() {
     return (
-        <Grid maxW='none' templateAreas={[`
+        <Grid minH={"100vh"} maxW='none' padding='0.5em' templateAreas={[`
             "title"
             "contacts"
             "divider"

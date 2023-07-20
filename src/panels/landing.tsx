@@ -3,7 +3,7 @@ import avatar from '../assets/avatar.jpg'
 
 export default function LandingPanel() {
     return (
-        <Grid maxW='none' padding='0.5em' bg={['initial', null, 'brand.100']} templateAreas={[
+        <Grid minH={"100vh"} maxW='none' padding='0.5em' bg={['initial', null, 'brand.900']} templateAreas={[
             `
                 "name"
                 "role"

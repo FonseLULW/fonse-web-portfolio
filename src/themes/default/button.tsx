@@ -24,11 +24,11 @@ export const Button = defineStyleConfig({
     variants: {
         outline: {
             border: "2px solid",
-            borderColor: "purple.500",
-            color: "purple.500",
+            borderColor: "brand.100",
+            color: "brand.100",
         },
         solid: {
-            bg: "blue.500",
+            bg: "brand.100",
             color: "white",
         },
     },
