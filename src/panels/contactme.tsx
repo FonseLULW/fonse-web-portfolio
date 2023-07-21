@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Grid, Divider, VStack, Link, Box, GridItem } from '@chakra-ui/react'
+import { Flex, Text, Image, Grid, Divider, VStack, Link, Box, GridItem, Heading } from '@chakra-ui/react'
 import MsgForm from './components/msgform'
 import { ContactConfig } from './data/contact_config'
 
@@ -17,7 +17,7 @@ export default function ContactMePanel() {
             "footer footer"
         `]}>
             <GridItem area="title">
-                <Text fontSize='2xl'>Contact Me</Text>
+                <Heading fontSize='2xl'>Contact Me</Heading>
             </GridItem>
             <GridItem area={"contacts"}>
                 <VStack>
@@ -33,7 +33,7 @@ export default function ContactMePanel() {
             </GridItem>
             <GridItem area={"divider"}>
                 <Divider />
-                <Text fontSize='md'>or send me a message directly...</Text>
+                <Heading as="h3" fontSize='xl'>or send me a message directly...</Heading>
             </GridItem>
             <GridItem area={"form"}>
                 <MsgForm />

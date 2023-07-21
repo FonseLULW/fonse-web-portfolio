@@ -1,12 +1,12 @@
 import { defineStyleConfig } from "@chakra-ui/react";
-import "@fontsource/work-sans/200-italic.css";
 
 export const Button = defineStyleConfig({
     baseStyle: {
-        fontFamily: `'Work Sans', sans-serif`,
+        // fontFamily: `'Work Sans', sans-serif`,
+        fontFamily: 'button',
         fontWeight: '400',
         textTransform: "uppercase",
-        borderRadius: "base"
+        borderRadius: "base",
     },
     sizes: {
         md: {

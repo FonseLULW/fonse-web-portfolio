@@ -8,8 +8,28 @@ const Fonts = () => (
         font-family: 'Work Sans';
         font-style: normal;
         font-display: swap;
-        src: url('./fonts/WorkSans-VariableFont_wght.ttf') format('woff2'), url('./fonts/headingfont.woff') format('woff');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        src: url('./fonts/WorkSans/WorkSans-VariableFont_wght.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-display: swap;
+        src: url('./fonts/JosefinSans/JosefinSans-VariableFont_wght.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'Inder';
+        font-style: normal;
+        font-display: swap;
+        src: url('./fonts/Inder/Inder-Regular.ttf') format('truetype');
+      }
+
+      @font-face {
+        font-family: 'Cabin';
+        font-style: normal;
+        font-display: swap;
+        src: url('./fonts/Cabin/Cabin-VariableFont_wdth,wght.ttf') format('truetype');
       }
       `}
   />
