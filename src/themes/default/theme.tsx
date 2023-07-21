@@ -9,5 +9,7 @@ export default extendTheme({
         primary: "#6096B4",
         primary_variant: "#93BFCF",
         secondary: "#EEE9DA",
-    },
+        white: "#FFFFFF",
+        black: "#000000"
+    }
 });

@@ -7,15 +7,18 @@ import LandingPanel from './panels/landing'
 import AboutMePanel from './panels/aboutme'
 import ProjectsPanel from './panels/projects'
 import ContactMePanel from './panels/contactme'
+import Fonts from './fonts'
 
 function App() {
   return (
+    <>
+    <Fonts />
     <Container maxW={"unset"} minW={"fit-content"} height="fit-content" m={0} p={0}>
       <LandingPanel />
       <AboutMePanel />
       <ProjectsPanel/>
       <ContactMePanel />
-    </Container>
+    </Container></>
   )
 }
 

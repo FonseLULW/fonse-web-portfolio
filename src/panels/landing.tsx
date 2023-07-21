@@ -19,7 +19,7 @@ export default function LandingPanel() {
             `
         ]}>
             <GridItem area='name'>
-                <Text fontSize='4xl' align='center'>Jose Alfonso Clarito</Text>
+                <Text fontSize='4xl' align='center' fontWeight={'bold'}>Jose Alfonso Clarito</Text>
             </GridItem>
             <GridItem area='role'>
                 <Text fontSize='2xl' align='center'>Software Developer</Text>
@@ -40,7 +40,7 @@ export default function LandingPanel() {
                 </Center>
             </GridItem>
             <GridItem area='action'>
-                <Button variant='solid' size='lg' width='100%'>Get in Touch</Button>
+                <Button variant='solid' size='lg'>Get in Touch</Button>
             </GridItem>
         </Grid>
     )

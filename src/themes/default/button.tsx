@@ -1,40 +1,34 @@
 import { defineStyleConfig } from "@chakra-ui/react";
+import "@fontsource/work-sans/200-italic.css";
 
 export const Button = defineStyleConfig({
-    // The styles all button have in common
     baseStyle: {
-        fontWeight: "bold",
+        fontFamily: `'Work Sans', sans-serif`,
+        fontWeight: '400',
         textTransform: "uppercase",
-        borderRadius: "base", // <-- border radius is same for all variants and sizes
+        borderRadius: "base"
     },
-    // Two sizes: sm and md
     sizes: {
-        sm: {
-            fontSize: "sm",
-            px: 4, // <-- px is short for paddingLeft and paddingRight
-            py: 3, // <-- py is short for paddingTop and paddingBottom
-        },
         md: {
-            fontSize: "md",
-            px: 6, // <-- these values are tokens from the design system
-            py: 4, // <-- these values are tokens from the design system
+            fontSize: 'md'
         },
+        lg: {
+            fontSize: '1.5em'
+        }
     },
-    // Two variants: outline and solid
     variants: {
-        outline: {
-            border: "2px solid",
-            borderColor: "brand.100",
-            color: "brand.100",
-        },
+        // outline: {
+        //     border: "2px solid",
+        //     borderColor: "brand.100",
+        //     color: "brand.100",
+        // },
         solid: {
-            bg: "brand.100",
+            bg: "primary",
             color: "white",
         },
     },
-    // The default size and variant values
     defaultProps: {
         size: "md",
-        variant: "outline",
+        variant: "solid",
     },
 });
