@@ -1,4 +1,4 @@
-import { Container, Text, Image, Button, Flex, VStack, Box, Center, Grid, GridItem } from '@chakra-ui/react'
+import { Text, Image, Button, Box, Center, Grid, GridItem } from '@chakra-ui/react'
 import avatar from '../assets/avatar.jpg'
 
 export default function LandingPanel() {

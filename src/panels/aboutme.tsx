@@ -1,6 +1,5 @@
-import { Container, Button, Text, SimpleGrid, Image, Box, Grid, GridItem } from '@chakra-ui/react'
+import { Button, Text, SimpleGrid, Image, Box, Grid, GridItem } from '@chakra-ui/react'
 import { DownloadIcon } from '@chakra-ui/icons'
-import jslogo from '../assets/js-test.png'
 import { SkillsConfig } from './data/skills_config'
 
 export default function AboutMePanel() {
