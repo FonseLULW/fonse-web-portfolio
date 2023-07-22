@@ -2,6 +2,11 @@ import { Text, Image, Button, Box, Center, Grid, GridItem, Heading, Highlight } 
 import avatar from '../assets/avatar.jpg'
 
 export default function LandingPanel() {
+    const getInTouch = () => {
+        document.getElementById("contactmepanel")?.scrollIntoView({behavior: 'smooth'});
+        // window.location.href = "#contactmepanel"
+    }
+
     return (
         <Grid minH={"100vh"} maxW='none' bg={'initial'} templateAreas={[
             `
@@ -52,7 +57,7 @@ export default function LandingPanel() {
                 </Center>
             </GridItem>
             <GridItem area='action'>
-                <Center mt={'0.25em'}><Button variant='solid' size={'lg'} fontSize={['2xl', '2xl', '3xl']}>Get in Touch</Button></Center>
+                <Center mt={'0.25em'}><Button variant='solid' size={'lg'} fontSize={['2xl', '2xl', '3xl']} onClick={getInTouch}>Get in Touch</Button></Center>
             </GridItem>
         </Grid>
     )
