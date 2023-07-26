@@ -17,6 +17,6 @@ export default extendTheme({
         button: `'Work Sans', sans-serif`,
         name: `'Cabin', monospace`,
         body: `'Inder', sans-serif`,
-        heading: `'Josefin Sans', serif` // change this because josefin sans is misaligned
+        heading: `monospace` // change this because josefin sans is misaligned
     }
 });

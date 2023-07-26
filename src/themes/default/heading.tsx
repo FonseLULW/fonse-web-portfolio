@@ -5,8 +5,9 @@ const section = defineStyle({
     backgroundColor: 'primary',
     fontWeight: '400',
     letterSpacing: '2px',
-    py: '0.5em',
+    py: '0.25em',
     px: '1em',
+    // my: '0.25em'
 });
 
 export const Heading = defineStyleConfig({

@@ -2,9 +2,9 @@ import { Flex, Text, Image, Grid, Divider, VStack, Link, Box, GridItem, Heading 
 import MsgForm from './components/msgform'
 import { ContactConfig } from './data/contact_config'
 
-export default function ContactMePanel({snap}: {snap: string}) {
+export default function ContactMePanel() {
     return (
-        <Grid scrollSnapAlign={snap} id="contactmepanel" minH={"100vh"} maxW='none' padding='0' templateAreas={[`
+        <Grid id="contactmepanel" minH={"100vh"} maxW='none' padding='0' templateAreas={[`
             "title"
             "contacts"
             "divider"

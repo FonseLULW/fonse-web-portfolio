@@ -2,9 +2,9 @@ import { Button, Text, SimpleGrid, Image, Box, Grid, GridItem, Heading } from '@
 import { DownloadIcon } from '@chakra-ui/icons'
 import { SkillsConfig } from './data/skills_config'
 
-export default function AboutMePanel({snap}: {snap: string}) {
+export default function AboutMePanel() {
     return (
-        <Grid scrollSnapAlign={snap} minH={"100vh"} maxW='none' padding='0' templateRows={'20% 10% 70%'} templateColumns='100%' templateAreas={`
+        <Grid minH={"100vh"} maxW='none' padding='0' templateRows={'20% 10% 70%'} templateColumns='100%' templateAreas={`
             "about"
             "resume"
             "skills"

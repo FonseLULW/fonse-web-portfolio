@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react'
+import { Container, VisuallyHidden } from '@chakra-ui/react'
 import LandingPanel from './panels/landing'
 import AboutMePanel from './panels/aboutme'
 import ProjectsPanel from './panels/projects'
@@ -11,16 +11,21 @@ import './index.css'
 
 
 function App() {
-  const snapAlign = 'start';
-
   return (
     <ChakraProvider theme={defaultTheme}>
       <Fonts />
       <Container maxW={"unset"} minW={"fit-content"} height="fit-content" m={0} p={0} scrollSnapType={'y mandatory'}>
-        <LandingPanel snap={snapAlign}/>
-        <AboutMePanel snap={snapAlign}/>
-        <ProjectsPanel snap={snapAlign}/>
-        <ContactMePanel snap={snapAlign}/>
+        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        <LandingPanel/>
+
+        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        <AboutMePanel/>
+
+        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        <ProjectsPanel/>
+
+        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        <ContactMePanel/>
       </Container>
     </ChakraProvider>
   )
