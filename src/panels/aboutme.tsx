@@ -19,7 +19,9 @@ export default function AboutMePanel() {
                 </Text>
             </GridItem>
             <GridItem area='resume' py={'1em'} textAlign={'right'} pr={'2em'}>
-                <Button rightIcon={<DownloadIcon />} size={'lg'} h={'100%'}>Download my resume!</Button>
+                <Button rightIcon={<DownloadIcon />} size={'lg'} h={'100%'} as='a' target='_blank'
+                    href='https://drive.google.com/file/d/1uX2hiBGdTisT9zp2ZP6TlNWfJNLrPfZ5/view?usp=drive_link'
+                >Download my resume!</Button>
             </GridItem>
             <GridItem area='skills'>
                 <Heading fontSize='5xl' variant={'fit'}>Skills</Heading>
