@@ -25,5 +25,173 @@ export var SkillsConfig: {
     {
         skill: 'React.js',
         imagepath: 'react.svg'
-    }
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
+    {
+        skill: 'React.js',
+        imagepath: 'react.svg'
+    },
 ]

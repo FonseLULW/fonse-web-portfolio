@@ -16,6 +16,12 @@ export const Button = defineStyleConfig({
             fontSize: '1.5em',
             px: 10,
             py: 6
+        },
+        fit: {
+            fontSize: 'md',
+            px: 10,
+            py: 6,
+            width: 'fit-content'
         }
     },
     variants: {
