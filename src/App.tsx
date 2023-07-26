@@ -11,14 +11,16 @@ import './index.css'
 
 
 function App() {
+  const snapAlign = 'start';
+
   return (
     <ChakraProvider theme={defaultTheme}>
       <Fonts />
-      <Container maxW={"unset"} minW={"fit-content"} height="fit-content" m={0} p={0}>
-        <LandingPanel />
-        <AboutMePanel />
-        <ProjectsPanel/>
-        <ContactMePanel />
+      <Container maxW={"unset"} minW={"fit-content"} height="fit-content" m={0} p={0} scrollSnapType={'y mandatory'}>
+        <LandingPanel snap={snapAlign}/>
+        <AboutMePanel snap={snapAlign}/>
+        <ProjectsPanel snap={snapAlign}/>
+        <ContactMePanel snap={snapAlign}/>
       </Container>
     </ChakraProvider>
   )

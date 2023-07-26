@@ -1,14 +1,13 @@
 import { Text, Image, Button, Box, Center, Grid, GridItem, Heading, Highlight } from '@chakra-ui/react'
 import avatar from '../assets/avatar.jpg'
 
-export default function LandingPanel() {
+export default function LandingPanel({snap}: {snap: string}) {
     const getInTouch = () => {
         document.getElementById("contactmepanel")?.scrollIntoView({behavior: 'smooth'});
-        // window.location.href = "#contactmepanel"
     }
 
     return (
-        <Grid minH={"100vh"} maxW='none' bg={'initial'} templateAreas={[
+        <Grid scrollSnapAlign={snap} minH={"100vh"} maxW='none' bg={'initial'} templateAreas={[
             `
                 "hello"
                 "name"
