@@ -3,8 +3,8 @@ import Projects from './components/myprojects'
 
 export default function ProjectsPanel() {
     return (
-        <Container minH={"100vh"} maxW='none' padding='0.5em' id="projectspanel" bg={'secondary'}>
-            <Heading fontSize='2xl'>Projects</Heading>
+        <Container minH={"100vh"} maxW='none' padding='0' id="projectspanel" bg={'secondary'}>
+            <Heading fontSize='5xl' variant="cover" textAlign={'center'}>Projects</Heading>
             <Text fontSize='l'>Lorem ipsum</Text>
             <Tabs>
                 <TabList>

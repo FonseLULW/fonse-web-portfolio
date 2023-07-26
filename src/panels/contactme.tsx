@@ -4,7 +4,7 @@ import { ContactConfig } from './data/contact_config'
 
 export default function ContactMePanel() {
     return (
-        <Grid id="contactmepanel" minH={"100vh"} maxW='none' padding='0.5em' templateAreas={[`
+        <Grid id="contactmepanel" minH={"100vh"} maxW='none' padding='0' templateAreas={[`
             "title"
             "contacts"
             "divider"
@@ -17,7 +17,7 @@ export default function ContactMePanel() {
             "footer footer"
         `]}>
             <GridItem area="title">
-                <Heading fontSize='2xl'>Contact Me</Heading>
+                <Heading fontSize='5xl' variant='cover' bgColor="primary_variant">Contact Me</Heading>
             </GridItem>
             <GridItem area={"contacts"}>
                 <VStack>

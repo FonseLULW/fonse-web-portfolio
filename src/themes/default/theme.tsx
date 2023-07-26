@@ -1,9 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./button";
+import { Heading } from "./heading";
 
 export default extendTheme({
     components: {
-        Button,
+        Button, Heading
     },
     colors: {
         primary: "#6096B4",
@@ -13,11 +14,9 @@ export default extendTheme({
         black: "#000000"
     },
     fonts: {
-        // heading: 'serif',
-        // body: 'serif',
         button: `'Work Sans', sans-serif`,
         name: `'Cabin', monospace`,
         body: `'Inder', sans-serif`,
-        heading: `'Josefin Sans', serif`
+        heading: `'Josefin Sans', serif` // change this because josefin sans is misaligned
     }
 });
