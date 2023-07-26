@@ -1,4 +1,4 @@
-import { Button, Text, SimpleGrid, Image, Box, Grid, GridItem, Heading, Center } from '@chakra-ui/react'
+import { Button, Text, SimpleGrid, Image, Box, Grid, GridItem, Heading, Center, AspectRatio } from '@chakra-ui/react'
 import { DownloadIcon } from '@chakra-ui/icons'
 import { SkillsConfig } from './data/skills_config'
 
@@ -23,9 +23,14 @@ export default function AboutMePanel() {
             </GridItem>
             <GridItem area='skills'>
                 <Heading fontSize='5xl' variant={'fit'}>Skills</Heading>
-                <SimpleGrid minChildWidth='100px' pt={'0.5em'} spacingX={'1.5em'} spacingY={'1.5em'} justifyItems={'center'} mx={'2.5em'}>
+                <SimpleGrid columns={14} py={'2em'} spacingX={'1.5em'} spacingY={'1.5em'} justifyItems={'center'} mx={'2.5em'}>
                     {
-                        SkillsConfig.map(item => <Box key={item.skill}><Image w={'100px'} src={`/skills/${item.imagepath}`} alt={item.skill}/></Box>)
+                        SkillsConfig.map(item => 
+                            <Box key={item.skill}>
+                                <Image w={'250px'} src={
+                                    `${item.imagepath}`
+                                } alt={item.skill}/>
+                            </Box>)
                     }
                 </SimpleGrid>
             </GridItem>
