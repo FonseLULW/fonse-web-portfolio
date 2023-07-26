@@ -32,144 +32,43 @@ export var SkillsConfig: {
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'C',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'C++',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'Android',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'Express.js',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'MongoDB',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'Firebase',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'SASS / SCSS',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'Bootstrap',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'Trello',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg'
     },
     {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
-    },
-    {
-        skill: 'React.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+        skill: 'GitHub',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
     }
-
 ]
