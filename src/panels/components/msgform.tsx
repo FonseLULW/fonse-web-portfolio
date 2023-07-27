@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Button, VisuallyHiddenInput } from '@chakra-ui/react'
+import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Button, VisuallyHiddenInput, VStack, Flex } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
 import { Icon } from '@chakra-ui/react'
 import { AiOutlineSend } from "react-icons/ai";
@@ -45,21 +45,21 @@ export default function MsgForm() {
     }
 
     return (
-        <>
-            <FormControl isInvalid={err === 'InvalidName'}>
-                <Input type="text" placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
+        <Flex h={'100%'} direction={'column'} justifyContent={'center'} gap={'0.75em'}>
+            <FormControl isInvalid={err === 'InvalidName'} minH={'10%'}>
+                <Input h={'100%'} type="text" bg={'white'} placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
                 <FormErrorMessage>
                     A name is required
                 </FormErrorMessage>
             </FormControl>
-            <FormControl isInvalid={err === 'InvalidEmail'}>
-                <Input type="email" placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
+            <FormControl isInvalid={err === 'InvalidEmail'} minH={'10%'}>
+                <Input h={'100%'} type="email" bg={'white'} placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
                 <FormErrorMessage>
                     A valid email is required
                 </FormErrorMessage>
             </FormControl>
-            <FormControl isInvalid={err === 'InvalidMessage'}>
-                <Textarea placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
+            <FormControl isInvalid={err === 'InvalidMessage'} minH={'20%'} flexGrow={'2'}>
+                <Textarea h={'100%'} placeholder="Message" bg={'white'} value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
                 <FormErrorMessage>
                     A message is required
                 </FormErrorMessage>
@@ -70,8 +70,8 @@ export default function MsgForm() {
                     Failed to send email
                 </FormErrorMessage>
             </FormControl>
-            <Button type="submit" onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
+            <Button fontWeight={'600'} fontSize={'xl'} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={'primary_variant'} onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
             
-        </>
+        </Flex>
     )
 }

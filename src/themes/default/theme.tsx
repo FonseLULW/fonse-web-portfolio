@@ -11,7 +11,8 @@ export default extendTheme({
         primary_variant: "#93BFCF",
         secondary: "#EEE9DA",
         white: "#FFFFFF",
-        black: "#000000"
+        black: "#000000",
+        grey: '#666666'
     },
     fonts: {
         button: `'Work Sans', sans-serif`,
