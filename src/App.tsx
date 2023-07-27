@@ -14,17 +14,17 @@ function App() {
   return (
     <ChakraProvider theme={defaultTheme}>
       <Fonts />
-      <Container maxW={"unset"} minW={"fit-content"} height="fit-content" m={0} p={0} scrollSnapType={'y mandatory'}>
-        <VisuallyHidden  scrollSnapAlign={'start'}/>
+      <Container maxW={"unset"} minW={"fit-content"} height="fit-content" minH={'fit-content'} m={0} p={0} scrollSnapType={'y mandatory'}>
+        {/* <VisuallyHidden  scrollSnapAlign={'start'} w={'0px'} h={'0px'}/> */}
         <LandingPanel/>
 
-        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        {/* <VisuallyHidden  scrollSnapAlign={'start'} w={'0px'} h={'0px'}/> */}
         <AboutMePanel/>
 
-        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        {/* <VisuallyHidden  scrollSnapAlign={'start'} w={'0px'} h={'0px'}/> */}
         <ProjectsPanel/>
 
-        <VisuallyHidden  scrollSnapAlign={'start'}/>
+        {/* <VisuallyHidden  scrollSnapAlign={'start'} w={'0px'} h={'0px'}/> */}
         <ContactMePanel/>
       </Container>
     </ChakraProvider>

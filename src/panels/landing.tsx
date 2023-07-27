@@ -7,7 +7,7 @@ export default function LandingPanel() {
     }
 
     return (
-        <Grid minH={"100vh"} maxW='none' bg={'initial'} templateAreas={[
+        <Grid scrollSnapAlign={'start'} minH={"100vh"} maxW='none' bg={'initial'} templateAreas={[
             `
                 "hello"
                 "name"
@@ -38,7 +38,7 @@ export default function LandingPanel() {
                 <Text mb={'0.25em'} align='center' fontSize={['xl', '2xl', '3xl']}>Lorem ipsum dolor sit amet consectetur.</Text>
             </GridItem>
             <GridItem area='avatar'>
-                <Center h='100%' w='100%' bg={['initial', 'secondary', 'primary']} borderRadius={['0%', '0%', '0% 0% 0% 35%']}>
+                <Center h='100%' w='100%' bg={['initial', null, 'primary']} borderRadius={['0%', '0%', '0% 0% 0% 35%']}>
                     <Box justifySelf={'center'}>
                         <Image
                             margin={'auto'}
