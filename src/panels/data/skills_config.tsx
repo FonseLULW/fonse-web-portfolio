@@ -1,7 +1,7 @@
 /* 
 Get imagepath from the src attribute of the icons on https://devicon.dev/ 
 
-Max number of items: (14 x 3)
+Max number of items: (4 x 4), (6 x 4), (8 x 4), (10 x 4), (14 x 4)
 */
 export var SkillsConfig: { 
     skill: string;
@@ -28,8 +28,36 @@ export var SkillsConfig: {
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg'
     },
     {
+        skill: 'TypeScript',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg'
+    },
+    {
         skill: 'React.js',
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg'
+    },
+    {
+        skill: 'Express.js',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg'
+    },
+    {
+        skill: 'Node.js',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg'
+    },
+    {
+        skill: 'Npm',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg'
+    },
+    {
+        skill: 'Yarn',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original-wordmark.svg'
+    },
+    {
+        skill: 'Jest',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg'
+    },
+    {
+        skill: 'Heroku',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg'
     },
     {
         skill: 'C',
@@ -40,12 +68,12 @@ export var SkillsConfig: {
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg'
     },
     {
-        skill: 'Android',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg'
+        skill: 'Linux',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'
     },
     {
-        skill: 'Express.js',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg'
+        skill: 'Android',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg'
     },
     {
         skill: 'MongoDB',
@@ -70,119 +98,23 @@ export var SkillsConfig: {
     {
         skill: 'GitHub',
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
+    },
+    {
+        skill: 'Figma',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
+    },
+    {
+        skill: 'MySQL',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg'
+    },
+    {
+        skill: 'MaterialUI',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg'
+    },
+    {
+        skill: 'Jupyter',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg'
     }
 
-    ,
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    },
-    {
-        skill: 'GitHub',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg'
-    }
+    
 ]
