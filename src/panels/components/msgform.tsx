@@ -46,20 +46,20 @@ export default function MsgForm() {
 
     return (
         <Flex h={'100%'} direction={'column'} justifyContent={'center'} gap={'0.75em'}>
-            <FormControl isInvalid={err === 'InvalidName'} minH={'10%'}>
-                <Input h={'100%'} type="text" bg={'white'} placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
+            <FormControl isInvalid={err === 'InvalidName'} minH={'10%'} display={'flex'} flexDir={'column'} gap={'0.1em'}>
                 <FormErrorMessage>
                     A name is required
                 </FormErrorMessage>
+                <Input py={'2em'} type="text" bg={'white'} borderColor={'#B3B3B3'} placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
             </FormControl>
             <FormControl isInvalid={err === 'InvalidEmail'} minH={'10%'}>
-                <Input h={'100%'} type="email" bg={'white'} placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
                 <FormErrorMessage>
                     A valid email is required
                 </FormErrorMessage>
+                <Input type="email" py={'2em'} bg={'white'} borderColor={'grey'} placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
             </FormControl>
             <FormControl isInvalid={err === 'InvalidMessage'} minH={'20%'} flexGrow={'2'}>
-                <Textarea h={'100%'} placeholder="Message" bg={'white'} value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
+                <Textarea h={'100%'} placeholder="Message" borderColor={'grey'} bg={'white'} value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
                 <FormErrorMessage>
                     A message is required
                 </FormErrorMessage>
@@ -70,7 +70,7 @@ export default function MsgForm() {
                     Failed to send email
                 </FormErrorMessage>
             </FormControl>
-            <Button fontWeight={'600'} fontSize={'xl'} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={'primary_variant'} onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
+            <Button fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={['primary_variant', null, 'primary']} onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
             
         </Flex>
     )

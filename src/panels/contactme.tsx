@@ -11,34 +11,34 @@ export default function ContactMePanel() {
             "form"
             "footer"
         `, null, `
-            "title title"
+            "title divider"
             "contacts divider"
             "contacts form"
-            "footer footer"
-        `]} templateRows={'10% 20% 5% auto 5%'} bg={'primary'}>
-            <GridItem area={"title"} h={'fit-content'}>
-                <Heading fontSize={['4xl', null, '5xl']} variant='cover' width={'90%'} bgColor="primary_variant" mt={'0.5em'}>Contact Me</Heading>
+            "footer form"
+        `]} templateRows={['10% 20% 5% auto 5%', null, '15% 5% 75% 5%']} templateColumns={['100%', null, '40% 60%']} bg={['primary', null, 'white']}>
+            <GridItem area={"title"} bg={[null, null, 'primary']}>
+                <Heading fontSize={['4xl', null, '5xl']} variant='cover' width={'90%'} bgColor="primary_variant" mt={'0.5em'} w={[null, null, '200%']}>Contact Me</Heading>
             </GridItem>
-            <GridItem area={"contacts"} alignSelf={'end'} pb={'1em'}>
-                <VStack color={'black'} alignItems={'start'} px={'2.5em'} gap={'0.5em'}>
+            <GridItem area={"contacts"} alignSelf={'end'} pb={'1em'} bg={[null, null, 'primary']} h={'100%'}>
+                <VStack color={'black'} alignItems={'start'} px={'2.5em'} gap={['0.5em', null, '1em']}>
                     {
                         ContactConfig.map(contact => 
                             <Flex alignItems={'center'} gap={5} key={contact.display + '_' + contact.strategy}>
                                 <Box display={'flex'} alignItems={'center'} justifyContent={'center'} boxSize={41}><Image boxSize={'100%'} src={`contacts/${contact.imagepath}`} alt={contact.strategy} /></Box>
-                                <Link href={contact.ref} fontWeight={'500'} letterSpacing={'1px'} fontSize={'lg'} fontFamily={'Work Sans'} target='_blank'>{contact.display}</Link>
+                                <Link href={contact.ref} fontWeight={'500'} letterSpacing={'1px'} fontSize={['lg', null, 'sm', 'xl', '2xl']} fontFamily={'Work Sans'} target='_blank'>{contact.display}</Link>
                             </Flex>    
                         )
                     }
                 </VStack>
             </GridItem>
-            <GridItem area={"divider"} px={'2em'} display={'flex'} flexDir={'column'} justifyContent={'space-evenly'}>
+            <GridItem area={"divider"} px={'2em'} display={'flex'} flexDir={'column'} justifyContent={'space-evenly'} mt={[null, null, '8em']}>
                 <Divider borderColor={'black'} height={'1px'}/>
                 <Heading as="h3" fontSize={['xl', null, 'xl']} fontFamily={'Inder'}>or send me a message directly...</Heading>
             </GridItem>
-            <GridItem area={"form"} px={'2em'} pb='2em' pt={'0.5em'}>
+            <GridItem area={"form"} px={'2em'} pb='2em' pt={'0.5em'} h={'100%'}>
                 <MsgForm />
             </GridItem>
-            <GridItem area={"footer"} px={'0.5em'} alignSelf={'end'} py={'0.25em'}>
+            <GridItem area={"footer"} px={['0.5em', null, '1em']} alignSelf={'end'} py={['0.25em', null, '1em']} bg={[null, null, 'primary']} h={'100%'}>
                 <Text fontFamily={'Work Sans'} fontWeight={'500'}>© All rights reserved</Text>
             </GridItem>
         </Grid>
