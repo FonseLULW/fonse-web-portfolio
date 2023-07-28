@@ -14,10 +14,10 @@ export default function Projects({arr, tags, lim = 5}: {arr: Array<ProjectConfig
                 .filter(proj => tags.some(tag => proj.tags.includes(tag)))
                 .slice(0, useBreakpointValue([lim, 2 * cols]))
                 .map(proj => 
-                    <Card key={proj.key} h='100%' variant={'filled'} bg={'primary_variant'} border={'2px solid black'}>
+                    <Card key={proj.title} h='100%' variant={'filled'} bg={'primary_variant'} border={'2px solid black'}>
                         <CardBody p={0} h={'100%'} display={'flex'} flexDir={'column'} justifyContent={'end'}>
-                            <Box bg={'#EEE9DA45'} display={'flex'} justifyContent={'center'} flexGrow={'2'}>
-                                <Image src={proj.imagepath} alt={proj.title}/>
+                            <Box bg={'#EEE9DA45'} display={'flex'} justifyContent={'center'} flexGrow={'2'} w={'100%'}>
+                                <Image src={proj.imagepath} alt={proj.title} w={'100%'} objectFit={'cover'}/>
                             </Box>
                             <Flex h={'fit-content'} flexDir={'column'} justifyContent={'space-between'} px={'0.5em'} py={'0.5em'}>
                                 <Text fontSize='xl' fontWeight={'bold'}>{proj.title}</Text>
