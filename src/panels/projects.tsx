@@ -8,9 +8,9 @@ export default function ProjectsPanel() {
             <Heading fontSize='5xl' variant="cover" textAlign={'center'}>Projects</Heading>
             <Tabs variant='line' size={'lg'} isFitted>
                 <TabList bg={'primary_variant'}>
-                    <Tab borderTopWidth={0} borderStartWidth={0} borderEndWidth={0} borderRadius={0}>Web / Mobile</Tab>
-                    <Tab borderTopWidth={0} borderStartWidth={0} borderEndWidth={0} borderRadius={0}>Game Development</Tab>
-                    <Tab borderTopWidth={0} borderStartWidth={0} borderEndWidth={0} borderRadius={0}>Data Engineering</Tab>
+                    <Tab>Web / Mobile</Tab>
+                    <Tab>Game Development</Tab>
+                    <Tab>Data Engineering</Tab>
                 </TabList>
 
                 <TabPanels>
