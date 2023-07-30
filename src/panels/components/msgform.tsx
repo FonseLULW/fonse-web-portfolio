@@ -1,6 +1,6 @@
-import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Button, VisuallyHiddenInput, VStack, Flex } from '@chakra-ui/react'
+import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Button, VisuallyHiddenInput, Icon, Flex } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
-import { Icon } from '@chakra-ui/react'
+import { CheckIcon } from '@chakra-ui/icons'
 import { AiOutlineSend } from "react-icons/ai";
 import emailjs from '@emailjs/browser';
 
@@ -11,6 +11,8 @@ export default function MsgForm() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [err, setErr] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
+    const [sent, setSent] = useState(false);
     
     const validate = (nameInput: string, emailInput: string, msgInput: string) => {
         if (!nameInput) { return 'InvalidName' }
@@ -22,6 +24,7 @@ export default function MsgForm() {
     const handleSubmit = async () => {
         const err = validate(name.trim(), email.trim(), message.trim());
         if (!err) {
+            setIsLoading(true);
             var mail = {
                 from_name: name,
                 from_email: email,
@@ -30,15 +33,16 @@ export default function MsgForm() {
 
             try {
                 await emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, mail, import.meta.env.VITE_PUBLIC_USER_ID)
-                alert('msg sent');
                 setErr('');
+                setSent(true);
+                setTimeout(() => { setSent(false); }, 2000);
             } catch (e) {
                 console.log("Env:", import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, mail, import.meta.env.VITE_PUBLIC_USER_ID)
                 console.log("Service Error:", e)
                 setErr('ServiceError');
             }
 
-
+            setIsLoading(false);
             return;
         }
         setErr(err);
@@ -70,7 +74,10 @@ export default function MsgForm() {
                     Failed to send email. Try again later.
                 </FormErrorMessage>
             </FormControl>
-            <Button fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={['primary']} onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
+            <Button isLoading={isLoading} fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={['primary']} onClick={handleSubmit}
+                rightIcon={sent ? <CheckIcon /> : <Icon as={AiOutlineSend} />}
+                bgColor={sent ? 'green.300' : 'primary'}
+            >{sent ? "Sent": "Send"}</Button>
             
         </Flex>
     )
