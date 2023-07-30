@@ -19,60 +19,24 @@ export var MyProjects: ProjectConfig[] = [
     },
     {
         title: 'Aflo', 
-        desc: 'Group projectectprojectprojeectprojectprojeectprojectproje', 
+        desc: 'A mobile travel app where users can create a budget-friendly vacation package including flights and hotels.', 
         imagepath: 'projects/aflo.png',
         tags: ['group', 'mobile'],
-        github: 'abcd'
+        github: 'https://github.com/ahanani/Aflo'
     },
     {
         title: 'Worryless', 
-        desc: 'Group projectectprojectprojeectprojectprojeectprojectprojeectprojectproje', 
+        desc: 'A journaling web app where users can leave their worries behind for the day.', 
         imagepath: 'projects/WorryLess_Logo.png',
         tags: ['group', 'web'],
-        github: 'abcd'
+        github: 'https://github.com/HailinChenbcit/2800-202210-DTC02'
     },
     {
         title: 'Eggonomics', 
-        desc: 'Group project', 
+        desc: "A web app that facilitates the average person's grocery shopping experience.", 
         imagepath: 'projects/eggonomics.png',
         tags: ['group', 'web'],
-        github: 'abcd'
-    }
-
-    ,
-    {
-        title: 'Eggonomics2', 
-        desc: 'Group project', 
-        imagepath: 'projects/eggonomics.png',
-        tags: ['group', 'web'],
-        github: 'abcd'
-    },
-    {
-        title: 'Eggonomics3', 
-        desc: 'Group project', 
-        imagepath: 'projects/eggonomics.png',
-        tags: ['group', 'web'],
-        github: 'abcd'
-    },
-    {
-        title: 'Eggonomics41', 
-        desc: 'Group project', 
-        imagepath: 'projects/eggonomics.png',
-        tags: ['group', 'web'],
-        github: 'abcd'
-    },
-    {
-        title: 'Eggonomics12', 
-        desc: 'Group project', 
-        imagepath: 'projects/eggonomics.png',
-        tags: ['group', 'web'],
-        github: 'abcd'
-    },
-    {
-        title: 'Eggonomics31313', 
-        desc: 'Group project', 
-        imagepath: 'projects/eggonomics.png',
-        tags: ['group', 'web'],
-        github: 'abcd'
+        github: 'https://github.com/FonseLULW/Eggonomics',
+        website: 'https://eggonomics-35c2b.firebaseapp.com/'
     }
 ]
