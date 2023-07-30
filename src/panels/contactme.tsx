@@ -31,11 +31,11 @@ export default function ContactMePanel() {
                     }
                 </VStack>
             </GridItem>
-            <GridItem area={"divider"} px={'2em'} display={'flex'} flexDir={'column'} justifyContent={'space-evenly'} mt={[null, null, '8em']}>
+            <GridItem area={"divider"} px={'2em'} display={'flex'} flexDir={'column'} justifyContent={'space-evenly'} mt={[null, null, '8em']} bg={['primary_variant', null, 'white']}>
                 <Divider borderColor={'black'} height={'1px'}/>
-                <Heading as="h3" fontSize={['xl', null, 'xl']} fontFamily={'Inder'}>or send me a message directly...</Heading>
+                <Heading as="h3" fontSize={['xl', null, 'xl']} fontFamily={'Comfortaa'}>or send me a message directly...</Heading>
             </GridItem>
-            <GridItem area={"form"} px={'2em'} pb='2em' pt={'0.5em'} h={'100%'}>
+            <GridItem area={"form"} px={'2em'} pb='2em' pt={'0.5em'} h={'100%'} bg={['primary_variant', null, 'white']}>
                 <MsgForm />
             </GridItem>
             <GridItem area={"footer"} px={['0.5em', null, '1em']} alignSelf={'end'} py={['0.25em', null, '1em']} bg={[null, null, 'primary']} h={'100%'}>

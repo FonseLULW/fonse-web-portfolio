@@ -16,18 +16,15 @@ export default function Projects({arr, tags, lim = 5}: {arr: Array<ProjectConfig
                 .slice(0, useBreakpointValue([lim, 2 * cols]))
                 .map(proj => 
                     <Card key={proj.title} h='100%' variant={'filled'} bg={'primary_variant'} border={'2px solid black'}>
-                        {/* <CardHeader bg='primary' px={0}>
-
-                        </CardHeader> */}
                         <CardBody p={0} h={'100%'} display={'flex'} flexDir={'column'} justifyContent={'end'}>
                             <Box h={'55%'} bg={'#EEE9DA45'} display={'flex'} justifyContent={'center'} flexGrow={'2'} w={'100%'} title={proj.title}>
                                 <Image src={proj.imagepath} alt={proj.title} w={'100%'} objectFit={'cover'}/>
                             </Box>
                             <Flex h={'45%'} flexDir={'column'} justifyContent={'start'} px={'0.5em'} py={'0.5em'}>
-                                <Heading size='lg' fontWeight={'bold'} title={proj.title}>{proj.title}</Heading>
-                                <Text fontStyle={'italic'} fontSize={['lg', 'xs', 'sm', 'md', null, 'lg']} noOfLines={2} title={proj.techs}>{proj.techs}</Text>
+                                <Heading color={'black'} size='lg' fontWeight={'300'} title={proj.title}>{proj.title}</Heading>
+                                <Text fontStyle={'italic'} fontSize={['lg', 'xs', 'sm', 'md', null, 'lg']} mt={'0.1em'} noOfLines={2} title={proj.techs}>{proj.techs}</Text>
                                 <Divider borderColor='grey' mt={'0.5em'} mb='0.2em' />
-                                <Text flex={'2 2'} fontSize={['lg', 'xs', 'sm', 'md', null, 'lg']} noOfLines={3} title={proj.desc}>{proj.desc}</Text>
+                                <Text flex={'2 2'} fontSize={['lg', 'xs', 'sm', 'md', null, 'lg']} noOfLines={4} title={proj.desc}>{proj.desc}</Text>
                             </Flex>
                         </CardBody>
                         <CardFooter p={0}>

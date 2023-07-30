@@ -47,30 +47,30 @@ export default function MsgForm() {
     return (
         <Flex h={'100%'} direction={'column'} justifyContent={'center'} gap={'0.75em'}>
             <FormControl isInvalid={err === 'InvalidName'} minH={'10%'} display={'flex'} flexDir={'column'} gap={'0.1em'}>
-                <FormErrorMessage>
+                <FormErrorMessage color={['red.700', null, 'red.500']}>
                     A name is required
                 </FormErrorMessage>
-                <Input py={'2em'} type="text" bg={'white'} borderColor={'#B3B3B3'} placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
+                <Input py={'2em'} type="text" bg={'white'} borderColor={'grey'} placeholder='Name' value={name} onChange={e => setName(e.target.value)} isRequired/>
             </FormControl>
             <FormControl isInvalid={err === 'InvalidEmail'} minH={'10%'}>
-                <FormErrorMessage>
+                <FormErrorMessage color={['red.700', null, 'red.500']}>
                     A valid email is required
                 </FormErrorMessage>
                 <Input type="email" py={'2em'} bg={'white'} borderColor={'grey'} placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
             </FormControl>
             <FormControl isInvalid={err === 'InvalidMessage'} minH={'20%'} flexGrow={'2'}>
                 <Textarea h={'100%'} placeholder="Message" borderColor={'grey'} bg={'white'} value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
-                <FormErrorMessage>
+                <FormErrorMessage color={['red.700', null, 'red.500']}>
                     A message is required
                 </FormErrorMessage>
             </FormControl>
             <FormControl isInvalid={err === 'ServiceError'}>
                 <VisuallyHiddenInput />
-                <FormErrorMessage>
-                    Failed to send email
+                <FormErrorMessage color={['red.700', null, 'red.500']}>
+                    Failed to send email. Try again later.
                 </FormErrorMessage>
             </FormControl>
-            <Button fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={['primary_variant', null, 'primary']} onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
+            <Button fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={['primary']} onClick={handleSubmit} rightIcon={<Icon as={AiOutlineSend} />}>Send</Button>
             
         </Flex>
     )

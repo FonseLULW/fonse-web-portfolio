@@ -31,8 +31,7 @@ export default function LandingPanel() {
                 <Heading as='h1' fontSize={['4xl', '5xl', '6xl']} textAlign={'center'} fontWeight={'semibold'} fontFamily={'name'} textTransform='uppercase' letterSpacing='widest'>Jose Alfonso Clarito</Heading>
             </GridItem>
             <GridItem area='role'>
-                {/* Replace with fancy animation */}
-                <Text fontSize={['2xl', '3xl', '4xl']} align='center'><Highlight query='Software Developer' styles={{ px: '2', py: '1', rounded: 'full', bg: 'primary_variant' }}>Software Developer</Highlight></Text> 
+                <Text fontSize={['2xl', '3xl', '4xl']} align='center'><Highlight query='Software Developer' styles={{ px: '5', py: '2', rounded: 'full', bg: 'primary_variant' }}>Software Developer</Highlight></Text> 
             </GridItem>
             <GridItem area='summary' alignSelf={'end'}>
                 <Text mb={'0.25em'} align='center' fontSize={['xl', '2xl', '3xl']}>Lorem ipsum dolor sit amet consectetur.</Text>

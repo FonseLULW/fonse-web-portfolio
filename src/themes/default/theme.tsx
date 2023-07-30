@@ -17,7 +17,7 @@ export default extendTheme({
     fonts: {
         button: `'Work Sans', sans-serif`,
         name: `'Cabin', monospace`,
-        body: `sans-serif`, // change this because Inder does not support font weights
-        heading: `monospace` // change this because josefin sans is misaligned
+        body: `'Comfortaa', sans-serif`,
+        heading: `'Unbounded', monospace`
     }
 });
