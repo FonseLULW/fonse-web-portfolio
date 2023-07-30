@@ -8,17 +8,17 @@ export default function ProjectsPanel() {
             <Heading fontSize='5xl' variant="cover" textAlign={'center'}>Projects</Heading>
             <Tabs variant='line' size={'lg'} isFitted>
                 <TabList bg={'primary_variant'}>
-                    <Tab>Web / Mobile</Tab>
-                    <Tab>Game Development</Tab>
-                    <Tab>Data Engineering</Tab>
+                    <Tab>Team projects</Tab>
+                    <Tab>Solo projects</Tab>
+                    <Tab>Data Science (Solo)</Tab>
                 </TabList>
 
                 <TabPanels>
                     <TabPanel>
-                        <Projects arr={MyProjects} tags={['web', 'mobile' , 'game']}/>
+                        <Projects arr={MyProjects} tags={['group']}/>
                     </TabPanel>
                     <TabPanel>
-                    <Projects arr={MyProjects} tags={['game']}/>
+                    <Projects arr={MyProjects} tags={['solo']} exclude={['data']}/>
                     </TabPanel>
                     <TabPanel>
                     <Projects arr={MyProjects} tags={['data']}/>

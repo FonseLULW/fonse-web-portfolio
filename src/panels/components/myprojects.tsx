@@ -2,7 +2,7 @@ import { Text, Image, Card, CardBody, Box, Heading, SimpleGrid, Flex, CardFooter
 import { ProjectConfig } from '../data/project_config'
 import { Icon, ExternalLinkIcon } from '@chakra-ui/icons'
 
-export default function Projects({arr, tags, lim = 5}: {arr: Array<ProjectConfig>, tags: Array<string>, lim?: number}) {
+export default function Projects({arr, tags, exclude=[], lim=5}: {arr: Array<ProjectConfig>, tags: Array<string>, exclude?: Array<string>, lim?: number}) {
     const cols = useBreakpointValue([1, 2, null, 3, 4, 5]) || 3
     return (
         <SimpleGrid 
@@ -12,7 +12,7 @@ export default function Projects({arr, tags, lim = 5}: {arr: Array<ProjectConfig
         >
             {
                 arr
-                .filter(proj => tags.some(tag => proj.tags.includes(tag)))
+                .filter(proj => tags.some(tag => proj.tags.includes(tag)) && !exclude.some(ex => proj.tags.includes(ex)))
                 .slice(0, useBreakpointValue([lim, 2 * cols]))
                 .map(proj => 
                     <Card key={proj.title} h='100%' variant={'filled'} bg={'primary_variant'} border={'2px solid black'}>
