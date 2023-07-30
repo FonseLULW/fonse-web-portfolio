@@ -21,7 +21,7 @@ export default function Projects({arr, tags, exclude=[], lim=5}: {arr: Array<Pro
                                 <Image src={proj.imagepath} alt={proj.title} w={'100%'} objectFit={'cover'}/>
                             </Box>
                             <Flex h={'45%'} flexDir={'column'} justifyContent={'start'} px={'0.5em'} py={'0.5em'}>
-                                <Heading color={'black'} size='lg' fontWeight={'300'} title={proj.title}>{proj.title}</Heading>
+                                <Heading color={'black'} size='lg' fontWeight={'300'} title={proj.title} noOfLines={1}>{proj.title}</Heading>
                                 <Text fontStyle={'italic'} fontSize={['lg', 'xs', 'sm', 'md', null, 'lg']} mt={'0.1em'} noOfLines={2} title={proj.techs}>{proj.techs}</Text>
                                 <Divider borderColor='grey' mt={'0.5em'} mb='0.2em' />
                                 <Text flex={'2 2'} fontSize={['lg', 'xs', 'sm', 'md', null, 'lg']} noOfLines={4} title={proj.desc}>{proj.desc}</Text>
