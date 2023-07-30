@@ -1,4 +1,4 @@
-import { Button, Text, SimpleGrid, Image, Box, Grid, GridItem, Heading, Center, AspectRatio, useBreakpoint, useBreakpointValue } from '@chakra-ui/react'
+import { Button, Text, SimpleGrid, Image, Box, Grid, GridItem, Heading, Highlight, Link, useBreakpoint, useBreakpointValue } from '@chakra-ui/react'
 import { DownloadIcon } from '@chakra-ui/icons'
 import { SkillsConfig } from './data/skills_config'
 
@@ -16,9 +16,12 @@ export default function AboutMePanel() {
             <GridItem area='about'>
                 <Heading fontSize={['4xl', null, '5xl']} variant={'fit'}>About Me</Heading>
             </GridItem>
-            <GridItem area='desc' px={'2em'} py={'0.5em'}>
-                <Text fontSize={['sm', 'md', 'xl']}>
-                Lorem ipsum dolor sit amet consectetur. Orci gravida elit sit vulputate platea convallis laoreet eget diam. Lorem mauris viverra elit nec pellentesque et fames tristique. Arcu sed vestibulum donec sagittis sem placerat sodales. Dictumst tincidunt consectetur sagittis aliquet dui ornare laoreet. Integer molestie morbi vitae elit. Non sed et non et purus egestas tincidunt sed.
+            <GridItem area='desc' px={'2em'} py={'0.5em'} fontSize={['sm', 'md', 'xl']}>
+                <Text>
+                    As a developer with strong attention to detail, I strive to design and implement user-friendly applications through code that is easy to maintain and test. My goal is to create web/mobile apps and video games that everyone will find fun in.
+                </Text>
+                <Text marginTop='1em'>
+                    I also specialize in data analysis and engineering. As a curious thinker, I like to know many things especially new and innovative technologies and how it will shape the future of our society. My favorite programming concepts are design patterns and programming paradigms.
                 </Text>
             </GridItem>
             <GridItem area='resume' py={'1em'} textAlign={['center', null, 'right']} pr={'2em'}>

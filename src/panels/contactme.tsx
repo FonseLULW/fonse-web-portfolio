@@ -15,11 +15,11 @@ export default function ContactMePanel() {
             "contacts divider"
             "contacts form"
             "footer form"
-        `]} templateRows={['10% 20% 5% auto 5%', null, '15% 5% 75% 5%']} templateColumns={['100%', null, '40% 60%']} bg={['primary', null, 'white']}>
+        `]} templateRows={['10% 30% 5% auto 5%', null, '15% 5% 75% 5%']} templateColumns={['100%', null, '40% 60%']} bg={['primary', null, 'white']}>
             <GridItem area={"title"} bg={[null, null, 'primary']}>
                 <Heading fontSize={['4xl', null, '5xl']} variant='cover' width={'90%'} bgColor="primary_variant" mt={'0.5em'} w={[null, null, '200%']}>Contact Me</Heading>
             </GridItem>
-            <GridItem area={"contacts"} alignSelf={'end'} pb={'1em'} bg={[null, null, 'primary']} h={'100%'}>
+            <GridItem display={'flex'} flexDir={'column'} justifyContent={['center', null, 'start']} area={"contacts"} alignSelf={'end'} pb={'1em'} bg={[null, null, 'primary']} h={'100%'}>
                 <VStack color={'black'} alignItems={'start'} px={'2.5em'} gap={['0.5em', null, '1em']}>
                     {
                         ContactConfig.map(contact => 

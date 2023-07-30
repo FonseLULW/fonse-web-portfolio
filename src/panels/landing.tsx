@@ -25,7 +25,7 @@ export default function LandingPanel() {
             `
         ]} gridTemplateColumns={[null, null, '64fr 36fr']} gridTemplateRows={[null, null, '40fr auto auto 20fr 40fr']}>
             <GridItem area='hello' alignSelf={'flex-end'}>
-                <Text fontSize={['2xl', '3xl', '4xl']} align='center'>Hello, I am</Text> 
+                <Text fontSize={['2xl', '3xl', '4xl']} align='center'>Hello, my name is</Text> 
             </GridItem>
             <GridItem area='name'>
                 <Heading as='h1' fontSize={['4xl', '5xl', '6xl']} textAlign={'center'} fontWeight={'semibold'} fontFamily={'name'} textTransform='uppercase' letterSpacing='widest'>Jose Alfonso Clarito</Heading>
@@ -34,7 +34,7 @@ export default function LandingPanel() {
                 <Text fontSize={['2xl', '3xl', '4xl']} align='center'><Highlight query='Software Developer' styles={{ px: '5', py: '2', rounded: 'full', bg: 'primary_variant' }}>Software Developer</Highlight></Text> 
             </GridItem>
             <GridItem area='summary' alignSelf={'end'}>
-                <Text mb={'0.25em'} align='center' fontSize={['xl', '2xl', '3xl']}>Lorem ipsum dolor sit amet consectetur.</Text>
+                <Text mb={'0.25em'} align='center' px={['0em', '0.5em', null, null, null, '6em']} fontSize={['md', 'lg', 'xl']}>I am a detail-oriented full-stack software developer focused on providing every customer with the best user experience in every app.</Text>
             </GridItem>
             <GridItem area='avatar'>
                 <Center h='100%' w='100%' bg={['initial', null, 'primary']} borderRadius={['0%', '0%', '0% 0% 0% 35%']}>

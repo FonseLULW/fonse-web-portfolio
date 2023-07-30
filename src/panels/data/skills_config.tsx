@@ -60,6 +60,10 @@ export var SkillsConfig: {
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg'
     },
     {
+        skill: 'Android',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg'
+    },
+    {
         skill: 'C',
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg'
     },
@@ -72,8 +76,8 @@ export var SkillsConfig: {
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg'
     },
     {
-        skill: 'Android',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg'
+        skill: 'Jupyter',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg'
     },
     {
         skill: 'MongoDB',
@@ -84,8 +88,16 @@ export var SkillsConfig: {
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg'
     },
     {
+        skill: 'MySQL',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg'
+    },
+    {
         skill: 'SASS / SCSS',
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg'
+    },
+    {
+        skill: 'MaterialUI',
+        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg'
     },
     {
         skill: 'Bootstrap',
@@ -102,18 +114,6 @@ export var SkillsConfig: {
     {
         skill: 'Figma',
         imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
-    },
-    {
-        skill: 'MySQL',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg'
-    },
-    {
-        skill: 'MaterialUI',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg'
-    },
-    {
-        skill: 'Jupyter',
-        imagepath: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg'
     }
 
     
