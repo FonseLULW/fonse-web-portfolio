@@ -1,4 +1,4 @@
-import { Container, VisuallyHidden } from '@chakra-ui/react'
+import { Container, VStack, VisuallyHidden } from '@chakra-ui/react'
 import LandingPanel from './panels/landing'
 import AboutMePanel from './panels/aboutme'
 import ProjectsPanel from './panels/projects'
@@ -14,12 +14,12 @@ function App() {
   return (
     <ChakraProvider theme={defaultTheme}>
       <Fonts />
-      <Container maxW={"unset"} minW={"fit-content"} height="fit-content" minH={'fit-content'} m={0} p={0} scrollSnapType={'y mandatory'}>
+      <VStack maxW={"unset"} minW={"fit-content"} height="fit-content" minH={'fit-content'} m={0} p={0} scrollSnapType={'y mandatory'}>
         <LandingPanel/>
         <AboutMePanel/>
         <ProjectsPanel/>
         <ContactMePanel/>
-      </Container>
+      </VStack>
     </ChakraProvider>
   )
 }
