@@ -1,5 +1,5 @@
-import { FormControl, FormLabel, FormErrorMessage, FormHelperText, Input, Textarea, Button, VisuallyHiddenInput, Icon, Flex } from '@chakra-ui/react'
-import { useState, useEffect } from 'react'
+import { FormControl, FormErrorMessage, Divider, Heading, Input, Textarea, Button, VisuallyHiddenInput, Icon, Flex } from '@chakra-ui/react'
+import { useState } from 'react'
 import { CheckIcon } from '@chakra-ui/icons'
 import { AiOutlineSend } from "react-icons/ai";
 import emailjs from '@emailjs/browser';
@@ -50,6 +50,8 @@ export default function MsgForm() {
 
     return (
         <Flex h={'100%'} direction={'column'} justifyContent={'center'} gap={'0.75em'}>
+            <Divider borderColor={'black'} height={'1px'}/>
+            <Heading as="h3" fontSize={['lg', null, 'xl']} fontFamily={'Comfortaa'}>or send me a message directly...</Heading>
             <FormControl isInvalid={err === 'InvalidName'} minH={'10%'} display={'flex'} flexDir={'column'} gap={'0.1em'}>
                 <FormErrorMessage color={['red.700', null, 'red.500']}>
                     A name is required
@@ -62,7 +64,7 @@ export default function MsgForm() {
                 </FormErrorMessage>
                 <Input type="email" py={'2em'} bg={'white'} borderColor={'grey'} placeholder='Email' value={email} onChange={e => setEmail(e.target.value)} isRequired/>
             </FormControl>
-            <FormControl isInvalid={err === 'InvalidMessage'} minH={'20%'} flexGrow={'2'}>
+            <FormControl isInvalid={err === 'InvalidMessage'} minH={'20%'} maxH={'50%'} flexGrow={'2'}>
                 <Textarea h={'100%'} placeholder="Message" borderColor={'grey'} bg={'white'} value={message} onChange={e => setMessage(e.target.value)} isRequired></Textarea>
                 <FormErrorMessage color={['red.700', null, 'red.500']}>
                     A message is required
@@ -74,9 +76,9 @@ export default function MsgForm() {
                     Failed to send email. Try again later.
                 </FormErrorMessage>
             </FormControl>
-            <Button isLoading={isLoading} fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} mt={'1.75em'} minH={'10%'} type="submit" bg={['primary']} onClick={handleSubmit}
+            <Button isLoading={isLoading} fontWeight={'600'} fontSize={['xl', null, '2xl']} letterSpacing={'0.05em'} type="submit" onClick={handleSubmit}
                 rightIcon={sent ? <CheckIcon /> : <Icon as={AiOutlineSend} />}
-                bgColor={sent ? 'green.300' : 'primary'}
+                bgColor={sent ? 'green.300' : ['primary_variant', null, 'primary']}
             >{sent ? "Sent": "Send"}</Button>
             
         </Flex>
