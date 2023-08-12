@@ -4,18 +4,25 @@ export interface ProjectConfig {
     imagepath: string;
     techs: string;
     tags: Array<string>;
-    github: string;
+    github?: string;
     website?: string;
 }
 
 
 export var MyProjects: ProjectConfig[] = [
     {
+        title: 'BCIT Hyper-K', 
+        desc: 'A supernova observation project, specifically using neutrino data to find supernovae in space.', 
+        imagepath: 'projects/supnova.jpg',
+        techs: 'Python, Linux, ComputeCanada',
+        tags: ['group', 'exp']
+    },
+    {
         title: 'BCIT SMART', 
         desc: 'A web card game inspired by Tabletop Simulator teaching clients about SMART Microgrids.', 
         imagepath: 'projects/smartpng.png',
         techs: 'HTML5, CSS3, JavaScript, React.js, MongoDB, Node.js, Express.js, Heroku, Material UI, Konva',
-        tags: ['group', 'web', 'game'],
+        tags: ['group', 'web', 'game', 'exp'],
         github: 'https://github.com/SmartGameSandbox/GameSandBox',
         website: 'https://smartgamesandbox.herokuapp.com/'
     },
